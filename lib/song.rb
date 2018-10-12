@@ -11,4 +11,3 @@ class Song
     # # binding.pry
     # puts "adding #{name}"
   end
-
