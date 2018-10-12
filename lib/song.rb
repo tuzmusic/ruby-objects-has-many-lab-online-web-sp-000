@@ -6,6 +6,6 @@ class Song
 
   def initialize(name)
     @name = name  end
-    Artist.ALL_SONGS << self
+    Artist.allsongs << self
     binding.pry
 end
