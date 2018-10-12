@@ -4,10 +4,10 @@ class Artist
 
   attr_accessor :name
 
-  allsongs = []
+  @@allsongs = []
 
   def self.allsongs
-    allsongs
+    @@allsongs
   end
 
   def initialize(name)
@@ -30,7 +30,6 @@ class Artist
   end
 
   def self.song_count
-    # binding.pry
     Artist.allsongs.size
   end
 end
