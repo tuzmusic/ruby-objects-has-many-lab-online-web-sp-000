@@ -13,5 +13,5 @@ class Song
   end
 
   puts "enter song name"
-  name = get
+  name = gets
   puts "you entered #{name}"
