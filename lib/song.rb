@@ -7,5 +7,4 @@ class Song
   def initialize(name)
     @name = name  end
     Artist.allsongs << self
-    binding.pry
-end
+  end
