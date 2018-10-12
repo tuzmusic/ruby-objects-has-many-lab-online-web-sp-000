@@ -8,5 +8,5 @@ class Song
     @name = name  end
     Artist.allsongs << self
     # binding.pry
-    puts "adding #{song}"
+    puts "adding #{name}"
   end
