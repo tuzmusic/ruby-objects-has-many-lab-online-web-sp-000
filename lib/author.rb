@@ -10,8 +10,8 @@ class Author
     @@allposts
   end
 
-  def initialize(title)
-    @title = title
+  def initialize(name)
+    @name = title
     @posts = []
   end
 
