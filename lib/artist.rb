@@ -7,7 +7,7 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    @@all << self
+    @@all << self unless @@all.include?(self)
   end
 
   def songs
