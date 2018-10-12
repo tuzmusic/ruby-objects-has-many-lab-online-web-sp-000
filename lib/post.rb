@@ -2,10 +2,10 @@ require 'pry'
 
 class Post
 
-  attr_accessor :name, :author
+  attr_accessor :title, :author
   @@all = []
-  def initialize(name)
-    @name = name
+  def initialize(title)
+    @title = title
     @author = nil
     @@all << self
     Author.allposts << self
