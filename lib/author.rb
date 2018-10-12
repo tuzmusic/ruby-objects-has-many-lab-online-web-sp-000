@@ -10,8 +10,8 @@ class Author
     @@allposts
   end
 
-  def initialize(name)
-    @name = name
+  def initialize(title)
+    @title = title
     @posts = []
   end
 
@@ -20,8 +20,8 @@ class Author
     @posts << post
   end
 
-  def add_post_by_name(name)
-    new_post = post.new(name)
+  def add_post_by_title(title)
+    new_post = post.new(title)
     add_post(new_post)
   end
 
