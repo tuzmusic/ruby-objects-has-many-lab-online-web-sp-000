@@ -2,30 +2,30 @@ require "pry"
 
 class Author
 
-  attr_accessor :name, :songs
+  attr_accessor :name, :posts
 
-  @@allsongs = []
+  @@allposts = []
 
-  def self.allsongs
-    @@allsongs
+  def self.allposts
+    @@allposts
   end
 
   def initialize(name)
     @name = name
-    @songs = []
+    @posts = []
   end
 
-  def add_song(song)
-    song.author = self
-    @songs << song
+  def add_post(post)
+    post.author = self
+    @posts << post
   end
 
-  def add_song_by_name(name)
-    new_song = Song.new(name)
-    add_song(new_song)
+  def add_post_by_name(name)
+    new_post = post.new(name)
+    add_post(new_post)
   end
 
-  def self.song_count
-    Author.allsongs.size
+  def self.post_count
+    Author.allposts.size
   end
 end
