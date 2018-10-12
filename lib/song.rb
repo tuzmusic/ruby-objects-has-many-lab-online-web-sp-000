@@ -7,11 +7,8 @@ class Song
   def initialize(name)
     @name = name  end
     @artist = nil
-    # Artist.allsongs << self
-    # binding.pry
-    puts "adding #{name}"
+    # # Artist.allsongs << self
+    # # binding.pry
+    # puts "adding #{name}"
   end
 end
-  puts "enter song name"
-  name = gets
-  
