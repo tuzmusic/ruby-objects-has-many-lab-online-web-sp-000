@@ -11,3 +11,7 @@ class Song
     # binding.pry
     puts "adding #{name}"
   end
+
+  puts "enter song name"
+  name = get
+  puts "you entered #{name}"
