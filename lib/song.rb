@@ -9,7 +9,7 @@ class Song
     @artist = nil
     @@all << self
     Artist.allsongs << self
-    binding.pry
+    # binding.pry
     # puts "adding #{name}"
   end
 
