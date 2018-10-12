@@ -12,3 +12,7 @@ class Song
     # # binding.pry
     # puts "adding #{name}"
   end
+
+  def self.all
+    @@all
+  end
