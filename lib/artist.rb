@@ -6,9 +6,9 @@ class Artist
 
   allsongs = []
 
-  # def self.allsongs
-  #   @@allsongs
-  # end
+  def self.allsongs
+    allsongs
+  end
 
   def initialize(name)
     @name = name
